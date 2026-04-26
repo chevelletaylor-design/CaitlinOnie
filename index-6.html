@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Caitlin Onie Photography — Portraits, products, landscapes, weddings & nature. Capturing the natural beauty of the world." />
+<title>Caitlin Onie Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Italianno&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="page-home">
+
+<nav class="site-nav">
+  <div class="nav-spacer"></div>
+  <a href="index.html" class="nav-mobile-logo-link" aria-label="Home">
+    <img src="assets/images/logo-placeholder.svg" alt="Caitlin Onie">
+  </a>
+  <div class="nav-links">
+    <a href="portraits.html">Portraits</a>
+    <a href="products.html">Products</a>
+    <div class="nav-dropdown">
+      <a href="nature.html" class="nav-dropdown-trigger">Nature <svg class="nav-caret" viewBox="0 0 8 5" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 1l3 3 3-3"/></svg></a>
+      <div class="nav-dropdown-menu">
+        <a href="nature.html">Nature</a>
+        <a href="landscapes.html">Landscapes</a>
+      </div>
+    </div>
+    <a href="weddings.html">Weddings</a>
+    <a href="about.html">About</a>
+    <a href="inquire.html">Inquire</a>
+  </div>
+  <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-drawer">
+  <a href="portraits.html">Portraits</a>
+  <a href="products.html">Products</a>
+  <a href="nature.html">Nature</a>
+  <a href="landscapes.html">Landscapes</a>
+  <a href="weddings.html">Weddings</a>
+  <a href="about.html">About</a>
+  <a href="inquire.html">Inquire</a>
+</div>
+
+<section class="hero-home">
+  <div class="hero-content-stack">
+    <img class="hero-logo" src="assets/images/logo-placeholder.svg" alt="Caitlin Onie Photography">
+    <h1 class="display hero-headline">Capturing the natural beauty of the world — both in <em>people</em> and <em>the planet.</em></h1>
+    <a class="hero-cta" href="inquire.html">Book a session</a>
+    <div class="hero-frame">
+      <div class="hero-carousel"></div>
+      <div class="hero-frame-overlay"></div>
+      <div class="hero-dots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="categories">
+  <div class="container">
+    <div class="categories-header reveal">
+      <div>
+        <span class="categories-eyebrow">Collections</span>
+        <h2 class="display categories-title"></h2>
+      </div>
+      <p class="categories-blurb"></p>
+    </div>
+    <div class="categories-grid reveal-stagger"></div>
+  </div>
+</section>
+
+<section class="about-home">
+  <div class="about-home-grid">
+    <div class="about-home-images reveal">
+      <div class="about-home-img-main"></div>
+      <div class="about-home-img-accent"></div>
+    </div>
+    <div class="about-home-content reveal">
+      <span class="about-home-script"></span>
+      <h2 class="display about-home-title"></h2>
+      <div class="about-home-body"></div>
+      <div class="about-home-stats"></div>
+      <a class="about-home-link" href="about.html">
+        Read my full story
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="social">
+  <div class="social-inner">
+    <h2 class="display social-title reveal"></h2>
+    <p class="social-handle reveal"></p>
+    <div class="social-grid reveal-stagger"></div>
+  </div>
+</section>
+
+<footer class="site-footer"></footer>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+<script src="scripts.js"></script>
+</body>
+</html>
