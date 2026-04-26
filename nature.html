@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Nature photography by Caitlin Onie." />
+<title>Nature — Caitlin Onie Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Italianno&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="page-category cat-nature">
+
+<nav class="site-nav">
+  <div class="nav-spacer"></div>
+  <a href="index.html" class="nav-mobile-logo-link" aria-label="Home">
+    <img src="assets/images/logo-placeholder.svg" alt="Caitlin Onie">
+  </a>
+  <div class="nav-links">
+    <a href="portraits.html">Portraits</a>
+    <a href="products.html">Products</a>
+    <a href="index.html" class="nav-logo-link" aria-label="Home">
+      <img class="nav-logo-center" src="assets/images/logo-placeholder.svg" alt="Caitlin Onie">
+    </a>
+    <div class="nav-dropdown">
+      <a href="nature.html" class="nav-dropdown-trigger active">Nature <svg class="nav-caret" viewBox="0 0 8 5" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 1l3 3 3-3"/></svg></a>
+      <div class="nav-dropdown-menu">
+        <a href="nature.html" class="active">Nature</a>
+        <a href="landscapes.html">Landscapes</a>
+      </div>
+    </div>
+    <a href="weddings.html">Weddings</a>
+    <a href="about.html">About</a>
+    <a href="inquire.html">Inquire</a>
+  </div>
+  <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-drawer">
+  <a href="portraits.html">Portraits</a>
+  <a href="products.html">Products</a>
+  <a href="nature.html" class="active">Nature</a>
+  <a href="landscapes.html">Landscapes</a>
+  <a href="weddings.html">Weddings</a>
+  <a href="about.html">About</a>
+  <a href="inquire.html">Inquire</a>
+</div>
+
+<section class="cat-hero">
+  <div class="cat-hero-content reveal">
+    <span class="cat-hero-eyebrow"></span>
+    <h1 class="display cat-hero-title"></h1>
+    <div class="cat-hero-meta"></div>
+    <div class="cat-hero-marquee">
+      <div class="cat-hero-marquee-track"></div>
+    </div>
+    <div class="cat-hero-frame"></div>
+  </div>
+</section>
+
+<section class="cat-intro">
+  <div class="cat-intro-bg"></div>
+  <div class="container">
+    <p class="reveal"></p>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="gallery-grid reveal-stagger"></div>
+</section>
+
+<a href="products.html" class="next-cat">
+  <div class="next-cat-img"></div>
+  <div class="next-cat-overlay"></div>
+  <div class="next-cat-content">
+    <span class="label">Next</span>
+    <h2 class="display"></h2>
+    <span class="next-cat-arrow">
+      View collection
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </span>
+  </div>
+</a>
+
+<footer class="site-footer"></footer>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+<script src="scripts.js"></script>
+</body>
+</html>
